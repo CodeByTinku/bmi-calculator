@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+  </head>
+  <style>
+    body {
+      background-color: #e5e5e5;
+    }
+    .container {
+      width: 25vw;
+      /* justify-content: center;
+        align-items: center; */
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      border: 2px solid black;
+    }
+    .header {
+      background-color: #5656ff;
+      height: 32px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      padding: 8px 0 8px 10px;
+    }
+    .box {
+      height: 400px;
+    }
+
+    .main-box {
+      height: 376px;
+      background-color: #e5e5e5;
+      margin: 12px 8px;
+      /* border: 1px solid black; */
+    }
+
+    input {
+      background-color: #ffaaff;
+      font-size: 21px;
+      width: 210px;
+      margin: 20px 15px 10px 15px;
+      color: black;
+    }
+
+    .btn {
+      position: absolute;
+      top: 47%;
+      left: 37%;
+      padding: 10px;
+      background-color: #5656ff;
+      border: none;
+      border-radius: 6px;
+    }
+    .result {
+      border: 1px solid black;
+      margin: 12px 8px;
+      background-color: #4c4c4c;
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header class="header">BMI Calculator</header>
+      <div class="box">
+        <div class="main-box">
+          <input type="number" placeholder="height(in meter)" />
+          <input type="number" placeholder="weight(in kg)" />
+          <button class="btn">Calculate</button>
+          <br /><br /><br /><br /><br />
+          <h4 class="result">Result</h4>
+        </div>
+      </div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
+</html>
